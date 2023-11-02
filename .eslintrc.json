@@ -1,0 +1,115 @@
+{
+  "env": {
+    "browser": true,
+
+    "es2021": true,
+
+    "jest/globals": true
+  },
+
+  "extends": [
+    "eslint:recommended",
+
+    "plugin:react/recommended",
+
+    "airbnb",
+
+    "plugin:prettier/recommended",
+
+    "plugin:jest/recommended"
+  ],
+
+  "parserOptions": {
+    "ecmaVersion": "latest",
+
+    "sourceType": "module"
+  },
+
+  "plugins": ["react", "jest"],
+
+  "ignorePatterns": ["node_modules", "build", ".eslintrc.json"],
+
+  "rules": {
+    // JEST RULES
+
+    "jest/no-disabled-tests": "warn",
+
+    "jest/no-focused-tests": "error",
+
+    "jest/no-identical-title": "error",
+
+    "jest/prefer-to-have-length": "warn",
+
+    "jest/valid-expect": "error",
+
+    "react/prop-types": 0,
+
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
+
+    "react/no-unescaped-entities": 0,
+
+    "no-return-await": 0,
+
+    // https://eslint.org/docs/latest/rules/camelcase#rule-details
+
+    "camelcase": 0,
+
+    // https://eslint.org/docs/latest/rules/no-plusplus
+
+    "no-plusplus": 0,
+
+    "react/no-array-index-key": 0,
+
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
+
+    "react/function-component-definition": 0,
+
+    // https://stackoverflow.com/questions/47774695/react-functional-component-default-props-vs-default-parameters
+
+    "react/require-default-props": 0,
+
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
+
+    "react/jsx-props-no-spreading": 0,
+
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-useless-fragment.md
+
+    "react/jsx-no-useless-fragment": 0,
+
+    // https://github.com/iamturns/eslint-config-airbnb-typescript#why-is-importno-unresolved-disabled
+
+    "import/no-unresolved": "error",
+
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
+
+    "import/prefer-default-export": 0,
+
+    // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/label-has-associated-control.md
+
+    "jsx-a11y/label-has-associated-control": [
+      2,
+
+      {
+        "assert": "nesting"
+      }
+    ],
+
+    "prettier/prettier": [
+      "error",
+
+      {
+        "endOfLine": "auto"
+      }
+    ],
+
+    "no-unused-expressions": [
+      "error",
+
+      {
+        "allowShortCircuit": true,
+
+        "allowTernary": true
+      }
+    ]
+  }
+}
