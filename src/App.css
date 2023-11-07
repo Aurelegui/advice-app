@@ -3,27 +3,27 @@
 @tailwind utilities;
 
 .card-body {
-    padding: 40px;
+  padding: 40px;
 }
 
 .card-title {
-    letter-spacing: 4px;
-    color: hsl(150, 100%, 66%);
+  letter-spacing: 4px;
+  color: hsl(150, 100%, 66%);
 }
 
 p {
-    letter-spacing: 1px;
-    color: hsl(193, 38%, 86%);
+  letter-spacing: 1px;
+  color: hsl(193, 38%, 86%);
 }
 
 .btn-primary {
-    min-height: 56px;
-    background-color: hsl(150, 100%, 66%);
-    border-color: transparent;
+  min-height: 56px;
+  background-color: hsl(150, 100%, 66%);
+  border-color: transparent;
 }
 
 .btn-primary:hover {
-    background-color: hsl(150, 100%, 66%);
-    border-color: transparent;
-    box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
+  background-color: hsl(150, 100%, 66%);
+  border-color: transparent;
+  box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
 }

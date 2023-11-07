@@ -19,6 +19,7 @@ function App() {
         setPosts(result.data.slip);
       })
       .catch((error) => {
+        // eslint-disable-next-line no-console
         console.log(error);
       });
   };
