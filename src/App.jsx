@@ -32,6 +32,7 @@ function App() {
     }
     window.addEventListener('resize', handleWindowResize);
 
+    // Clean up function
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
